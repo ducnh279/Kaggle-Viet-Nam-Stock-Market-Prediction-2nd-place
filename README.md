@@ -1,7 +1,6 @@
 # Viet Nam Stock Market Prediction - 5th place
 
-This repository contains code used to achieve 5th place in the Viet Nam Stock Market Prediction
-Kaggle 02 - TowardDataScience on Kaggle (https://www.kaggle.com/c/stock-market-prediction/overview)
+This repository contains code used to achieve 5th place in the "Viet Nam Stock Market Prediction" on Kaggle (https://www.kaggle.com/c/stock-market-prediction/overview)
 
 
 ## Models
@@ -26,8 +25,12 @@ In this competition, I first started with XGBoost model for regression and pick 
 
 
 
-## After weighted average ensemble
+### After weighted average ensemble
 
 |  Public score  |  Private score  |
 -----------------|-----------------|
 | 4.253          | 4.587           |
+
+
+## Solution summary
+![This is the solution flowchart](https://github.com/nhduc279/Kaggle-Viet-Nam-Stock-Market-Prediction-5th-place/blob/main/images/flowchart.png)
