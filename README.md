@@ -6,7 +6,7 @@ Kaggle 02 - TowardDataScience on Kaggle (https://www.kaggle.com/c/stock-market-p
 
 ## Models
 
-In this competition, I first started with XGBoost model for regression and pick out only 3 features (symbols, month, and day of year). Becuase I joined the competition quite late when I just had 5 days for submissions. On the last day, I decided to do ensembling with 11 different models. This is because, the big idea of ensembling is that if we have a collection of individually imperfect (and independent) models, the "one-off" mistakes made by each model are probably not going to be made by the rest of the models, and thus the mistakes will be discarded when averaging the models. 
+In this competition, I first started with XGBoost model for regression and pick out only 3 features (symbols, month, and day of year). Becuase I joined the competition quite late when I just had 5 days for submissions. On the last day, I decided to do weighted average ensemble with 11 different models. Because the big idea of ensembling is that if we have a collection of individually imperfect (and independent) models, the "one-off" mistakes made by each model are probably not going to be made by the rest of the models, and thus the mistakes will be discarded when averaging the models. 
 
 - Below is the model summary with some adjustments in ensembling weights which is different from the weights I used.
 
@@ -26,7 +26,7 @@ In this competition, I first started with XGBoost model for regression and pick 
 
 
 
-## After manually ensembling by weights
+## After weighted average ensemble
 
 |  Public score  |  Private score  |
 -----------------|-----------------|
