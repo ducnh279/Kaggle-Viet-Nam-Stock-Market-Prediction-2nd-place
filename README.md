@@ -1,6 +1,6 @@
 # Viet Nam Stock Market Prediction - 5th place
 
-This repository contains code used to achieve 5th place in the "Viet Nam Stock Market Prediction" competition on Kaggle (https://www.kaggle.com/c/stock-market-prediction/leaderboard)
+This repository contains code used to achieve 5th place in the **"Viet Nam Stock Market Prediction - TowardDataScience"** competition on Kaggle (https://www.kaggle.com/c/stock-market-prediction/leaderboard)
 
 
 ## I. Solution Summary
@@ -10,14 +10,14 @@ This repository contains code used to achieve 5th place in the "Viet Nam Stock M
 # II. Feature Selection and Extraction
 ![fms](https://github.com/nhduc279/Kaggle-Viet-Nam-Stock-Market-Prediction-5th-place/blob/main/images/first_feature_permutation_importance.png)
 
-- Initially, I extracted many features from the "date" feature in the "price_train" set, such as: ['month', "day of the year", "week of the year", "day of the month", "day of the week", "quarter']. However, after using Feature Permutation Importance with XGBoost, I realized that some features have extremely low importance. Thus, I decided to remove some features. There were 3 features left selected, including symbols, day of the year, and month.
+- Initially, I extracted many features from the "date" feature in the "price_train" set, such as: **['month', "day of the year", "week of the year", "day of the month", "day of the week", "quarter']**. However, after using Feature Permutation Importance with XGBoost, I realized that some features have extremely low importance. Thus, I decided to remove some features. There were 3 features left selected, including **symbols, day of the year, and month.**
 
-- Here, I firmly believe in feature selection from the method called "Feature Permutation Importance." Because it is not "inflated" with categorical features with many unique values, like the "symbol" feature, this method does not suffer from a large degree of overfitting because it uses independent datasets while computing the weight of the importance for each feature. You can see the horizontal bar chart below, which shows the relative importance of the features.
+- Here, I firmly believe in feature selection from the method called **"Feature Permutation Importance"**. Because it is not "inflated" with categorical features with many unique values, like the "symbol" feature, this method does not suffer from a large degree of overfitting because it uses independent datasets while computing the weight of the importance for each feature. You can see the horizontal bar chart below, which shows the relative importance of the features.
 
 
 ## III. Models
 
-In this competition, I started with the XGBoost regression model and selected only three characteristics (symbols, month, and day of the year). Because I entered the competition late, with only five days to submit, I chose to do a weighted average ensemble with 11 distinct models on the last day. Because the big idea of ensemble learning is that if we have a collection of individually imperfect (and independent) models, the "one-off" mistakes made by each model are probably not going to be made by the rest of the models, and thus the mistakes will be discarded when averaging the models. 
+In this competition, I started with the XGBoost regression model and selected only three features (symbols, month, and day of the year). Because I entered the competition late, with only five days to submit, I chose to do a weighted average ensemble with 11 distinct models on the last day. Because the big idea of ensemble learning is that if we have a collection of individually imperfect (and independent) models, the "one-off" mistakes made by each model are probably not going to be made by the rest of the models, and thus the mistakes will be discarded when averaging the models. 
 
 - Below is the model summary with some adjustments in ensembling weights that are different from the weights I used.
 
