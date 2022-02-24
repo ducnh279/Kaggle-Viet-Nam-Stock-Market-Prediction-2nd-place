@@ -37,7 +37,7 @@ In this competition, I started with the XGBoost regression model and selected on
 
 
 
-### IV. After weighted average ensemble
+## IV. After weighted average ensemble
 
 |  Public score  |  Private score  |
 -----------------|-----------------|
