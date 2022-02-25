@@ -21,7 +21,7 @@ In this competition, I started with the XGBoost regression model and selected on
 
 - Below is the model summary with some adjustments in ensembling weights that are different from the weights I used.
 
-|        Model                  |    MAPE (5-fold CV)                   |  Public score  | Private score   | Ensembling        |      
+|        Model                  |    MAPE (5-fold CV)                   |  Public score  | Private score   | Ensembling weight |      
 |-------------------------------|---------------------------------------|----------------|-----------------|-------------------|
 | HistGradientBoostingRegressor | 0.015                                 | 4.445          | 4.926           | 7                 |    
 | XGBRegressor                  | 0.013                                 | 4.775          | 5.323           | 5                 |      
