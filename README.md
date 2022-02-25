@@ -1,4 +1,4 @@
-# Viet Nam Stock Market Prediction - 5th place
+# Viet Nam Stock Market Prediction - 3rd place
 
 This repository contains code used to achieve 5th place in the **"Viet Nam Stock Market Prediction - TowardDataScience"** competition on Kaggle (https://www.kaggle.com/c/stock-market-prediction/leaderboard)
 
