@@ -42,3 +42,10 @@ In this competition, I started with the XGBoost regression model and selected on
 |  Public score  |  Private score  |
 -----------------|-----------------|
 | 4.253          | 4.587           |
+
+## IV. Simple but better solution with LightGBM (after the competition)
+|  Public score  |  Private score  |
+-----------------|-----------------|
+| 4.095          | 4.460        |
+
+
